@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kundli Generator</title>
+  <link rel="stylesheet" href="../home/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Kundli Generator</h1>
+    <nav>
+      <ul>
+        <li><a href="../home/index.html">Home</a></li>
+        <li><a href="../about/index.html">About Us</a></li>
+        <li><a href="../appointment/index.html">Astrology Appointment</a></li>
+        <li><a href="../panchaang/index.html">Panchaang</a></li>
+        <li><a href="index.html">Kundli Generator</a></li>
+        <li><a href="../blog/index.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="kundli-main">
+    <h2>Generate Your Kundli</h2>
+    <form id="kundliForm">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="birthDate">Birth Date:</label>
+      <input type="date" id="birthDate" name="birthDate" required>
+      
+      <label for="birthTime">Birth Time:</label>
+      <input type="time" id="birthTime" name="birthTime" required>
+      
+      <label for="latitude">Latitude:</label>
+      <input type="text" id="latitude" name="latitude" placeholder="e.g., 28.6139" required>
+      
+      <label for="longitude">Longitude:</label>
+      <input type="text" id="longitude" name="longitude" placeholder="e.g., 77.2090" required>
+      
+      <button type="button" onclick="generateKundli()">Generate Kundli</button>
+    </form>
+    
+    <div id="kundliOutput"></div>
+  </main>
+
+  <footer>
+    <p>© 2024 Dr. Vikrant Pathak's Astrology. All rights reserved.</p>
+  </footer>
+
+  <script src="kundli.js"></script>
+</body>
+</html>
